@@ -13,9 +13,9 @@ PRODUCT_BRAND := google
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=raven \
-    PRIVATE_BUILD_DESC="raven-user 13 TP1A.220624.021 8877034 release-keys"
+    PRIVATE_BUILD_DESC="raven-user 13 TP1A.220905.004 8927612 release-keys"
 
-BUILD_FINGERPRINT := google/raven/raven:13/TP1A.220624.021/8877034:user/release-keys
+BUILD_FINGERPRINT := google/raven/raven:13/TP1A.220905.004/8927612:user/release-keys
 
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
