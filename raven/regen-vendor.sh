@@ -270,6 +270,7 @@ VENDOR_SKIP_FILES=(
     "bin/yes"
     "bin/zcat"
     "build.prop"
+    "etc/NOTICE.xml.gz"
     "etc/UWB-calibration-am.conf"
     "etc/UWB-calibration-ar.conf"
     "etc/UWB-calibration-az.conf"
