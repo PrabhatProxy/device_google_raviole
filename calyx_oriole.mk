@@ -13,9 +13,9 @@ PRODUCT_BRAND := google
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=oriole \
-    PRIVATE_BUILD_DESC="oriole-user 13 TP1A.221005.002 9012097 release-keys"
+    PRIVATE_BUILD_DESC="oriole-user 13 TP1A.221105.002 9080065 release-keys"
 
-BUILD_FINGERPRINT := google/oriole/oriole:13/TP1A.221005.002/9012097:user/release-keys
+BUILD_FINGERPRINT := google/oriole/oriole:13/TP1A.221105.002/9080065:user/release-keys
 
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
