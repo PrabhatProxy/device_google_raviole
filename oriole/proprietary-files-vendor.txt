@@ -952,6 +952,7 @@ vendor/firmware/fw_bcmdhd.map
 vendor/firmware/g6.app
 vendor/firmware/google/edgetpu-abrolhos.fw
 vendor/firmware/google_wifi_firmware_config_info.pb
+vendor/firmware/mfc_fw.bin
 vendor/firmware/sarconfig.info
 vendor/firmware/st54j_conf.bin
 vendor/firmware/st54j_fw.bin
@@ -968,7 +969,6 @@ vendor/lib/audio_spk_35l41.so
 vendor/lib/audio_tunnel_aoc.so
 vendor/lib/audio_usb_aoc.so
 vendor/lib/audio_waves_aoc.so
-vendor/lib/com.google.hardware.pixel.display-V7-ndk.so
 vendor/lib/egl/libGLES_mali.so
 vendor/lib/hw/audio.platform.aoc.so
 vendor/lib/hw/audio.primary.gs101.so
@@ -1058,7 +1058,6 @@ vendor/lib64/biometricsuez.so
 vendor/lib64/com.google.edgetpu_app_service-V2-ndk.so
 vendor/lib64/com.google.edgetpu_vendor_service-V2-ndk.so
 vendor/lib64/com.google.hardware.biometrics.fingerprint.fingerprint-ext-V1-ndk.so
-vendor/lib64/com.google.hardware.pixel.display-V7-ndk.so
 vendor/lib64/com.google.input-V1-ndk.so
 vendor/lib64/egl/libGLES_mali.so
 vendor/lib64/fp_utils.so
