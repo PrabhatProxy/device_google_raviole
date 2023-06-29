@@ -1,4 +1,4 @@
-DEVICE_PACKAGE_OVERLAYS += device/google/raviole/overlay-calyx
+DEVICE_PACKAGE_OVERLAYS += device/google/raviole/overlay-superior
 
 # EUICC
 PRODUCT_COPY_FILES += \
