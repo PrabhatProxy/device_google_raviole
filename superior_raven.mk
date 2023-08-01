@@ -18,6 +18,20 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
+# Charging Animation
+TARGET_INCLUDE_PIXEL_CHARGER := true
+
+# Disable/Enable Blur Support, default is false
+TARGET_ENABLE_BLUR := true
+
+#Udfps Stuff
+SUPERIOR_UDFPS_ANIMATIONS := true
+
+# Superior Prebuilts
+USE_QUICKPIC := true
+USE_DUCKDUCKGO := true
+USE_MOTO_CALCULATOR := true
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=raven \
     PRIVATE_BUILD_DESC="raven-user 13 TQ3A.230605.010 10121037 release-keys"
