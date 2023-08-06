@@ -27,6 +27,9 @@ TARGET_ENABLE_BLUR := true
 #Udfps Stuff
 SUPERIOR_UDFPS_ANIMATIONS := true
 
+# Superior OS Official
+SUPERIOR_OFFICIAL := true
+
 # Superior Prebuilts
 USE_QUICKPIC := true
 USE_DUCKDUCKGO := true
