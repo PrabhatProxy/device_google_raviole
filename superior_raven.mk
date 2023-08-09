@@ -37,9 +37,9 @@ USE_MOTO_CALCULATOR := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=raven \
-    PRIVATE_BUILD_DESC="raven-user 13 TQ3A.230605.010 10121037 release-keys"
+    PRIVATE_BUILD_DESC="raven-user 13 TQ3A.230805.001 10316531 release-keys"
 
-BUILD_FINGERPRINT := google/raven/raven:13/TQ3A.230605.010/10121037:user/release-keys
+BUILD_FINGERPRINT := google/raven/raven:13/TQ3A.230805.001/10316531:user/release-keys
 
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
