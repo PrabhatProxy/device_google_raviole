@@ -86,6 +86,9 @@ PRODUCT_PACKAGES += \
     nos_app_weaver:64 \
     pixelpowerstats_provider_aidl_interface-cpp.vendor:64
 
+# PixelParts
+include packages/apps/PixelParts/device.mk
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0.vendor \
