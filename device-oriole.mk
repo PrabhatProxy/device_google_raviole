@@ -276,6 +276,3 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.bluetooth.opus.enabled=true
 
-# HBM
-PRODUCT_PACKAGES += \
-    HbmSVManagerOverlay
