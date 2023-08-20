@@ -60,6 +60,9 @@ PRODUCT_PACKAGES += \
     android.hardware.confirmationui@1.0.vendor:64 \
     libteeui_hal_support.vendor:64
 
+# Gcam
+include vendor/gcam/gcam.mk
+
 # HIDL
 PRODUCT_PACKAGES += \
     libhidltransport.vendor \

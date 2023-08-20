@@ -101,6 +101,12 @@ echo " "
 git cherry-pick --abort
 echo " "
 
+# Settings: Disable face enroll on Setup Wizard 
+git cherry-pick 4a49f33c78d7a3ffad2027ee7b0a3b76e7428855
+echo " "
+git cherry-pick --abort
+echo " "
+
 echo "patching vendor/superior"
 cd ../../../vendor/superior
 
@@ -117,10 +123,48 @@ cd ../..
 
 echo "Cloning FaceUnlock Related stuff"
 echo " "
-git clone https://github.com/SuperiorOS/android_packages_apps_FaceUnlockService.git packages/apps/FaceUnlockService
-echo " "
-git clone https://gitlab.com/superioros/android_external_faceunlock.git external/faceunlock
-echo " "
 
+DIR="packages/apps/FaceUnlockService"
+if [ -d "$DIR" ]; then
+  ### Take action if $DIR exists ###
+  echo "packages/apps/FaceUnlockService exists"
+  cd packages/apps/FaceUnlockService
+  git pull
+  cd ../../..
+else
+  ###  Control will jump here if $DIR does NOT exists ###
+  echo "Error: ${DIR} not found."
+  git clone https://github.com/SuperiorOS/android_packages_apps_FaceUnlockService.git packages/apps/FaceUnlockService
+fi
+echo " "
+DIR2="external/faceunlock"
+if [ -d "$DIR2" ]; then
+  ### Take action if $DIR exists ###
+  echo "external/faceunlock exists"
+  cd external/faceunlock
+  git pull
+  cd ../..
+else
+  ###  Control will jump here if $DIR does NOT exists ###
+  echo "Error: ${DIR2} not found."
+  git clone https://gitlab.com/superioros/android_external_faceunlock.git external/faceunlock
+fi
+echo " "
 echo "Finished Setting Up FaceUnlock!"
+
+echo " "
+echo "Cloning GCam"
+DIR3="vendor/gcam"
+if [ -d "$DIR3" ]; then
+  ### Take action if $DIR exists ###
+  echo "vendor/gcam exists"
+  cd vendor/gcam
+  git pull
+  cd ../..
+else
+  ###  Control will jump here if $DIR does NOT exists ###
+  echo "Error: ${DIR3} not found."
+  git clone https://gitlab.com/PrabhatProxy/vendor_gcam.git vendor/gcam
+fi
+echo " "
 echo "Please Scroll and check for errors"
