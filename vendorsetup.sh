@@ -6,55 +6,55 @@ cd frameworks/base
 git fetch https://github.com/PrabhatProxy/superior_android_frameworks_base.git thirteen-aosp-qpr3
 echo " "
 # Initial import of Face Unlock for S 
-git cherry-pick 6a67cc2d0790032e01a6d4fc4711f32d38f233d5
+git cherry-pick 50a350a2cbf0dd8e83c66cf9825ccf26baf3677b
 echo " "
 git cherry-pick --abort
 echo " "
 
 # services: Merge T changes on our custom face unlock impl 
-git cherry-pick 2f7e537bd1dd4def1f7b2252379ed3bb3141d583
+git cherry-pick 776f470051c81cdacab69c049aff6c26257a0f8d
 echo " "
 git cherry-pick --abort
 echo " "
 
 # FaceService: Allow our face unlock to be used on third-party apps
-git cherry-pick 553b8e1aa6d7763e27d52c4cf4e7c1b68d97120f
+git cherry-pick 80406529f39ba2a6c77787b2fd4b6846b497ff51
 echo " "
 git cherry-pick --abort
 echo " "
 
 # Do not show camera indicator for Face Unlock service 
-git cherry-pick 73c437552f645ed002fd5182256787a556e51d71
+git cherry-pick fd5b25a53b090f335df1c76f2bb831ca7fae5d4b
 echo " "
 git cherry-pick --abort
 echo " "
 
 # WalletActivity: Don't explicity request face auth
-git cherry-pick 8a5e3e9c8dca6390015eef9a024bf72c0d8a2a53
+git cherry-pick b5626ad29373f8fcefbd521609970698d648c6b0
 echo " "
 git cherry-pick --abort
 echo " "
 
 # Reset face auth on occluding app when authenticated
-git cherry-pick ef86549f6d1a0ca66ed7692b6596c9b1a93a6605
+git cherry-pick 93d6fa203e93fbd9448867a94e97d493a6e2777a
 echo " "
 git cherry-pick --abort
 echo " "
 
 # face: Pass requestId on our authentication client 
-git cherry-pick 1022f456f10faa28a1bdab92f64e5940e86d6b0b
+git cherry-pick 1b6bae814458b6db80ee811e1ba99f550b5726ca
 echo " "
 git cherry-pick --abort
 echo " "
 
 # Add idle lockout message for FaceUnlock 
-git cherry-pick 295e1cbe70bd66924760557c0723787247d804f3
+git cherry-pick 99caf426a2bfbec605a4c8d25811afba35370d88
 echo " "
 git cherry-pick --abort
 echo " "
 
 # KeyguardBouncer: Don't delay showing if face auth running 
-git cherry-pick 559715ef81c64693d436ae186de94a03b44d7a85
+git cherry-pick 1eda0a5a19d4a300008ca6f1de33a232b15f433f
 echo " "
 git cherry-pick --abort
 echo " "
